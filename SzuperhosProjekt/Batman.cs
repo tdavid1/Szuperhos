@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    internal class Batman : IMilliardos , ISzuperhos
+    public class Batman : IMilliardos , ISzuperhos
     {
         private double lelemenyesseg;
 
@@ -32,6 +32,10 @@ namespace SzuperhosProjekt
         public void KutyutKeszit()
         {
             lelemenyesseg = lelemenyesseg + 50;
+        }
+        public override string ToString()
+        {
+            return $"Batman: Leleményeség{this.lelemenyesseg}";
         }
     }
 }

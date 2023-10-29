@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SzuperhosProjekt
 {
-    internal class Vasember : Bosszuallo, IMilliardos
+    public class Vasember : Bosszuallo, IMilliardos
     {
-        public Vasember(double szuperero, bool vanEGyengesege) : base(szuperero, vanEGyengesege)
+        public Vasember()
         {
-            szuperero = 150;
-            vanEGyengesege = true;
+            Szuperero = 150;
+            VanEGyengesege = true;
         }
         public void KutyutKeszit()
         {
